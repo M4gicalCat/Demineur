@@ -1,0 +1,38 @@
+td
+{
+    font-size: 2em;
+    color: lightseagreen;
+    background: lightseagreen;
+    width: 1em;
+    height: 1em;
+}
+.vide.drapeau
+{
+    background: black;
+    width: 1em;
+    height: 1em;
+    color: black;
+}
+.bombe.drapeau
+{
+    background: black;
+    width: 1em;
+    height: 1em;
+    color: black;
+}
+.bombe.revele
+{
+    background: red;
+    width: 1em;
+    height: 1em;
+    color: white;
+}
+.vide.revele
+{
+    background: green;
+    width: 1em;
+    height: 1em;
+    color: white;
+}
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Démineur</title>
+    <script src="case.js"></script>
+    <link href="demineur.css" rel="stylesheet">
+</head>
+<body>
+<table>
+    <tbody id="grille">
+
+    </tbody>
+</table>
+<div id="grilleDem" hidden></div>
+
+<script>
+    let nbCotes = 20;
+    let difficulte = "difficile";
+
+</script>
+<div id="choix"></div>
+<script>
+    if (document.getElementById("grille").innerHTML === "\n\n    ")
+    {
+        document.getElementById("choix").innerHTML = "<label>Entrez le nombre de cases par côté :</label><input value='20' min='10' type='number' id='nbCotes' onChange='changeNbCotes()'> <select id='difficulte' onchange='changeDifficulte()'> <option value='simple'>Simple</option><option selected value='moyen'>Moyen</option><option value='difficile'>Difficile</option><option value='hardcore'>Hardcore</option></select>";
+    }
+</script>
+
+<button onclick="game('grille', nbCotes, difficulte)">Lancer une partie</button>
+
+
+<style>
+    #rectFooter{
+        width:100%;
+        padding:5%;
+        margin-top: 5%;
+        margin-bottom: 0%;
+        background-color: #10102F;
+        color:#AABBAA;
+    }
+    #insideDiv{
+        font-family: sans-serif;
+    }
+    #DEP{
+        padding-top:1%;
+        width: 240px;
+        height: 110px;
+    }
+    #IUT{
+        padding-left: 10px;
+        padding-top: 1%;
+        margin-top: 1px;
+        width: 190px;
+        height: 90px;
+    }
+</style>
+<footer>
+    <div id="rectFooter">
+        <div id="insideDiv">
+        Philippe Faisandier<br>
+        DUT informatique<br>
+        <a href="http://www.iut-bm.univ-fcomte.fr/"><img id="IUT" src="../IUT_LOGO.png"></a>
+        <a href="http://www.iut-bm.univ-fcomte.fr/"><img id="DEP" src="../DPT_LOGO.png"></a>
+    </div>
+    </div>
+</footer>
+</body>
+</html>
